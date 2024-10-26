@@ -62,7 +62,8 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-.key-features {
+}
+    .key-features {
     background-color: #f3f3f3;
     padding: 20px;
     border-radius: 8px;

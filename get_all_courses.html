@@ -2,31 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get All Courses</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>All Courses - Choose Your Program</h1>
+    <h1>Get All Courses</h1>
 
-    <div class="program-options">
-        <h2>All Classes (Four-Week Program)</h2>
-        <div class="program">
-            <h3>Basic</h3>
-            <p>6 Weeks - ₦12,000<br>8 Weeks - ₦15,000</p>
-        </div>
-        <div class="program">
-            <h3>Premium</h3>
-            <p>6 Weeks - ₦19,900<br>8 Weeks - ₦25,000</p>
-        </div>
-    </div>
+    <!-- Course Selection Section -->
+    <section class="course-options">
+        <h2>Choose Your Course</h2>
 
-    <p class="start-date">🗓 Start Date: <span class="urgent">1st November 2024</span></p>
+        <form action="confirm_payment.html" method="get">
+            <h3>6-Week Program</h3>
+            <label>
+                <input type="checkbox" name="course" value="6-week-basic">
+                Basic - ₦12,000 / $7.29
+            </label><br>
+            <label>
+                <input type="checkbox" name="course" value="6-week-premium">
+                Premium - ₦16,000 / $9.72
+            </label><br>
 
-    <div class="discount-info">
-        <h4>Special Discounts</h4>
-        <p>30% discount for the first 20 sign-ups!<br>40% discount for referrals with successful sign-ups.</p>
-    </div>
+            <h3>8-Week Program</h3>
+            <label>
+                <input type="checkbox" name="course" value="8-week-basic">
+                Basic - ₦19,900 / $12.09
+            </label><br>
+            <label>
+                <input type="checkbox" name="course" value="8-week-premium">
+                Premium - ₦25,000 / $15.19
+            </label><br>
 
-    <a href="signup.html" class="signup-button">Sign Up for Premium</a>
+            <!-- Discount Information -->
+            <p><strong>Special Discounts:</strong></p>
+            <ul>
+                <li>30% off for the first 20 sign-ups</li>
+                <li>40% off for those who refer a friend who also joins</li>
+            </ul>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Proceed to Payment">
+        </form>
+    </section>
 </body>
 </html>

@@ -82,3 +82,34 @@ img {
     margin: 8px 0;
     color: #fff; /* White text */
 }
+.program-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.program {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+}
+.program h3 {
+    color: #ffd700;
+}
+.start-date {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #ff6666; /* Attention-grabbing color */
+}
+.discount-info {
+    background-color: #282828;
+    padding: 15px;
+    color: #ffd700;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+.urgent {
+    color: #ff0000; /* Red for urgency */
+    font-weight: bold;
+}

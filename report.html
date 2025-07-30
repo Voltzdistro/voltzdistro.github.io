@@ -49,28 +49,31 @@
   <h1>Submit a Report Form</h1>
   <p><!-- Description --></p>
 
-  <form class="report-form" action=":mailtovoltzdistro@gmail.com" method="POST" enctype="multipart/form-data">
-    <label for="type">Report Type</label>
-    <select id="type" name="type" required>
-      <option value="">Select one...</option>
-      <option value="bug">Bug Report</option>
-      <option value="vulnerability">Vulnerability</option>
-      <option value="copyright">Copyright Infringement</option>
-      <option value="other">Other</option>
-    </select>
+ <form class="report-form" action="https://formsubmit.co/voltzdistro@gmail.com" method="POST" enctype="multipart/form-data">
+  <!-- Redirect after submission -->
+  <input type="hidden" name="_next" value="https://voltzdistro.github.io/thank-you.html">
+  <input type="hidden" name="_captcha" value="false">
 
-    <label for="description">Description</label>
-    <textarea id="description" name="description" placeholder="Describe the issue clearly..." required></textarea>
+  <label for="type">Report Type</label>
+  <select id="type" name="Report Type" required>
+    <option value="">Select one...</option>
+    <option value="Bug Report">Bug Report</option>
+    <option value="Vulnerability">Vulnerability</option>
+    <option value="Copyright">Copyright Infringement</option>
+    <option value="Other">Other</option>
+  </select>
 
-    <label for="email">Your Email (optional)</label>
-    <input type="email" id="email" name="email" placeholder="name@example.com">
+  <label for="description">Description</label>
+  <textarea id="description" name="Description" placeholder="Describe the issue clearly..." required></textarea>
 
-    <label for="file">Attach File (optional)</label>
-    <input type="file" id="file" name="file">
+  <label for="email">Your Email (optional)</label>
+  <input type="email" id="email" name="Email" placeholder="name@example.com">
 
-    <button type="submit">Submit Report</button>
-    <input type="hidden" name="_next" value="https://voltzdistro.github.io/thank-you.html">
-  </form>
+  <label for="file">Attach File (optional)</label>
+  <input type="file" id="file" name="attachment">
+
+  <button type="submit">Submit Report</button>
+</form>
 </div>
   </form>
 </section>

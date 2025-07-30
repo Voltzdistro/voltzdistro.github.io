@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltzdistro - Underground Tech Engineering</title>
+<!-- In the <head> of all .html files -->
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Fixed Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <span class="logo-icon" id="reload-icon"><i data-lucide="zap"></i></span>
+            </div>
+            <ul class="sidebar-nav">
+    <li><a href="index.html" class="nav-item active" data-tooltip="Home"><span class="nav-icon"><i data-lucide="home"></i></span></a></li>
+    <li><a href="about.html" class="nav-item" data-tooltip="About"><span class="nav-icon"><i data-lucide="message-circle-warning"></i></span></a></li>
+    <li><a href="downloads.html" class="nav-item" data-tooltip="Downloads"><span class="nav-icon"><i data-lucide="download"></i></span></a></li>
+    <li><a href="repos.html" class="nav-item" data-tooltip="Repos"><span class="nav-icon"><i data-lucide="wrench"></i></span></a></li>
+    <li><a href="faqs.html" class="nav-item" data-tooltip="FAQs"><span class="nav-icon"><i data-lucide="help-circle"></i></span></a></li>
+    <li><a href="donate.html" class="nav-item" data-tooltip="Donate"><span class="nav-icon"><i data-lucide="hand-helping"></i></span></a></li>
+    <li><a href="report.html" class="nav-item" data-tooltip="Report"><span class="nav-icon"><i data-lucide="alert-triangle"></i></span></a></li>
+    <li><a href="community.html" class="nav-item" data-tooltip="Community"><span class="nav-icon"><i data-lucide="users"></i></span></a></li>
+</ul>
+
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- Hero Section -->
+                <section class="hero-section">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Voltzdistro</h1>
+                        <p class="hero-subtitle">Underground Tech Engineering</p>
+                        <p class="hero-description">Low-resource, high-impact digital tools built for sysadmins, pentesters, and underground devs who demand power without bloat.</p>
+                        <div class="hero-actions">
+                            <a href="downloads.html" class="btn btn-primary">Get Tools</a>
+                            <a href="about.html" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Diamond Highlights Section -->
+<section class="highlights-section">
+  <div class="diamond-grid">
+    <div class="diamond-card">
+      <div class="card-content">
+        <i data-lucide="lock"></i>
+        <h3>Security-Minded</h3>
+        <p>Zero trust, least privilege, local-first approach to every tool we build.</p>
+      </div>
+    </div>
+    <div class="diamond-card">
+      <div class="card-content">
+        <i data-lucide="scroll-text"></i>
+        <h3>Script-Ready</h3>
+        <p>Automation tools that work offline, without cloud dependencies or bloat.</p>
+      </div>
+    </div>
+    <div class="diamond-card">
+      <div class="card-content">
+        <i data-lucide="shield-plus"></i>
+        <h3>Powered by Grit</h3>
+        <p>Built by a young visionary from Nigeria, engineered for maximum impact.</p>
+      </div>
+    </div>
+    <div class="diamond-card">
+      <div class="card-content">
+        <i data-lucide="circle-plus"></i>
+        <h3>No Bloat</h3>
+        <p>Clean code, minimal frameworks, maximum performance on any system.</p>
+      </div>
+    </div>
+  </div>
+</section>
+                <!-- Quick Access -->
+                <section class="quick-access-section">
+                    <h2 class="section-title">Quick Access</h2>
+                    <div class="quick-access-grid">
+                        <a href="downloads.html" class="access-card">
+                            <div class="access-icon"><i data-lucide="mail-plus"></i></div>
+                            <h3>Latest Tools</h3>
+                            <p>Ready-to-use utilities and scripts</p>
+                        </a>
+                        <a href="repos.html" class="access-card">
+                            <div class="access-icon"><i data-lucide="binary"></i></div>
+                            <h3>Source Code</h3>
+                            <p>GitHub repositories and documentation</p>
+                        </a>
+                        <a href="community.html" class="access-card">
+                            <div class="access-icon"><i data-lucide="users"></i></div>
+                            <h3>Join Community</h3>
+                            <p>Connect with fellow underground devs</p>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Creator Note -->
+                <section class="creator-section">
+                    <div class="creator-card">
+                        <h2 class="creator-title">From the Creator</h2>
+                        <p class="creator-message">"Open-source doesn't mean open-doors. We build tools that defend themselves, run anywhere, and never compromise on security. Every line of code serves a purpose."</p>
+                        <div class="creator-signature">
+                            <span class="signature-dash">—</span>
+                            <span class="signature-name">Voltzdistro Team</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-item");
+
+  navLinks.forEach(link => {
+    if(link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+</script>
+<footer class="site-footer">
+  &copy; 202 Voltzdistro. All rights reserved. |
+  <a href="about.html">About</a> |
+  <a href="privacy.html">Privacy Policy</a> |
+  <a href="terms.html">Terms of Service</a>
+</footer>
+<script>
+  document.getElementById("reload-icon").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

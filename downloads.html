@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downloads – Voltzdistro</title>
+  <!-- In the <head> of all .html files -->
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-icon" id="reload-icon"><i data-lucide="zap"></i></span>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="index.html" class="nav-item" data-tooltip="Home"><span class="nav-icon"><i data-lucide="home"></i></span></a></li>
+        <li><a href="about.html" class="nav-item active" data-tooltip="About"><span class="nav-icon"><i data-lucide="message-circle-warning"></i></span></a></li>
+        <li><a href="downloads.html" class="nav-item" data-tooltip="Downloads"><span class="nav-icon"><i data-lucide="download"></i></span></a></li>
+        <li><a href="repos.html" class="nav-item" data-tooltip="Repos"><span class="nav-icon"><i data-lucide="wrench"></i></span></a></li>
+        <li><a href="faqs.html" class="nav-item" data-tooltip="FAQs"><span class="nav-icon"><i data-lucide="help-circle"></i></span></a></li>
+        <li><a href="donate.html" class="nav-item" data-tooltip="Donate"><span class="nav-icon"><i data-lucide="hand-helping"></i></span></a></li>
+        <li><a href="report.html" class="nav-item" data-tooltip="Report"><span class="nav-icon"><i data-lucide="alert-triangle"></i></span></a></li>
+        <li><a href="community.html" class="nav-item" data-tooltip="Community"><span class="nav-icon"><i data-lucide="users"></i></span></a></li>
+      </ul>
+    </nav>
+  <main class="main-content">
+    <section class="downloads-section">
+      <h1 class="section-title">Download Voltzdistro Tools</h1>
+      <p class="section-desc">Here are our free tools — sharp, bloat-free, and ready to go. No ads. No nags.</p>
+
+      <div class="downloads-list">
+        <!-- Sample project -->
+        <div class="tool-card">
+  <div class="tool-header" onclick="toggleDescription(header)">
+    <div>
+      <h3><i data-lucide="zap"></i> NetBooster™ <span class="version">v1.0</span></h3>
+      <p class="tagline"><i data-lucide="activity"></i> Optimize. Accelerate. Reclaim Your Network.</p>
+      <p class="filesize"><i data-lucide="database"></i> 100KB</p>
+    </div>
+    <button class="download-btn" onclick="event.stopPropagation(); window.open('https://u.pcloud.link/publink/show?code=XZqWK25ZAnYVDF3rvmy02RnH0KyzSjAGxkny', '_blank')">
+      <i data-lucide="download"></i> Download
+    </button>
+  </div>
+
+  <div class="tool-description">
+    <p><strong>NetBooster™</strong> is a lightweight, high-performance tool that flushes DNS, resets Winsock, and renews IP configs — restoring fast, clean connectivity with no command line hassle.</p>
+    <ul>
+      <li><i data-lucide="refresh-ccw"></i> One-click network refresh</li>
+      <li><i data-lucide="trending-up"></i> Real-time speed boost</li>
+      <li><i data-lucide="shield-check"></i> Local-only, no data collection</li>
+      <li><i data-lucide="usb"></i> Portable EXE — ideal for flash drives</li>
+    </ul>
+    <button class="download-btn-inline" onclick="window.open('https://u.pcloud.link/publink/show?code=XZqWK25ZAnYVDF3rvmy02RnH0KyzSjAGxkny', '_blank')">
+      <i data-lucide="download-cloud"></i> Download NetBooster
+    </button>
+  </div>
+</div>
+
+        <!-- Add more tools here -->
+         <div class="tool-card">
+  <div class="tool-header" onclick="toggleDescription(tool-card)">
+    <div>
+      <h3><i data-lucide="cpu"></i> Voltzdistro™ System Optimizer (Light) <span class="version">v1.0</span></h3>
+      <p class="tagline"><i data-lucide="zap"></i> Minimal Load. Maximum Efficiency.</p>
+      <p class="filesize"><i data-lucide="database"></i> 101.1KB</p>
+    </div>
+    <button class="download-btn" onclick="event.stopPropagation(); window.open('https://u.pcloud.link/publink/show?code=XZjeK25ZNUSL1d50hVLumPkCC3zmAbCfg7Ny', '_blank')">
+      <i data-lucide="download"></i> Download
+    </button>
+  </div>
+
+  <div class="tool-description">
+    <p><strong>Voltzdistro™ System Optimizer Light</strong> is a command-line-based utility designed for fast, no-frills system maintenance and performance tuning on Windows machines.</p>
+    <p>Built for lightweight environments and tech-savvy users, the Light edition delivers essential tools in a compact way to stabilize their system in just a few keystrokes.</p>
+    
+    <ul>
+      <li><i data-lucide="trash-2"></i> Clean Temporary Files</li>
+      <li><i data-lucide="globe"></i> Flush DNS Cache</li>
+      <li><i data-lucide="battery-charging"></i> Optimize Memory</li>
+      <li><i data-lucide="x-octagon"></i> Kill Background Apps</li>
+      <li><i data-lucide="refresh-ccw"></i> Restart Windows Services</li>
+      <li><i data-lucide="shield-check"></i> Run System File Checker</li>
+      <li><i data-lucide="archive"></i> Backup User Data</li>
+      <li><i data-lucide="wifi"></i> Test Network Connectivity</li>
+      <li><i data-lucide="terminal"></i> Run All Operations</li>
+      <li><i data-lucide="log-out"></i> Exit Interface</li>
+    </ul>
+
+    <p><strong>Designed For:</strong></p>
+    <ul>
+      <li><i data-lucide="user-cog"></i> IT professionals & technicians</li>
+      <li><i data-lucide="settings-2"></i> Power users on low-spec systems</li>
+      <li><i data-lucide="usb"></i> Flash drive or toolkit deployment</li>
+      <li><i data-lucide="wifi-off"></i> Offline environments with no installer access</li>
+    </ul>
+
+    <button class="download-btn-inline" onclick="window.open('https://u.pcloud.link/publink/show?code=XZjeK25ZNUSL1d50hVLumPkCC3zmAbCfg7Ny', '_blank')">
+      <i data-lucide="download-cloud"></i> Download System Optimizer Light
+    </button>
+  </div>
+        <!-- Add more tools as needed -->
+      </div>
+    </section>
+
+    <footer class="downloads-footer">
+      <p class="request-link">
+        Looking for something custom?
+        <a href="request.html">Request a Tool</a>
+      </p>
+    </footer>
+  </main>
+   <script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-item");
+
+  navLinks.forEach(link => {
+    if(link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+</script>
+<script>
+  function toggleDescription(header) {
+    const allCards = document.querySelectorAll('.tool-card');
+    const thisCard = header.closest('.tool-card');
+    const thisDesc = thisCard.querySelector('.tool-description');
+
+    allCards.forEach(card => {
+      const desc = card.querySelector('.tool-description');
+      if (card !== thisCard) {
+        desc.style.display = 'none';
+        card.classList.remove('expanded');
+      }
+    });
+
+    const isVisible = thisDesc.style.display === 'block';
+    thisDesc.style.display = isVisible ? 'none' : 'block';
+    thisCard.classList.toggle('expanded', !isVisible);
+  }
+</script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

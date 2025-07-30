@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Tool – Voltzdistro</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main class="request-archived-page">
+    <section class="request-header">
+      <h1 class="form-intro">Request a Custom Tool</h1>
+    </section>
+
+    <h2 class="form-header">Have an idea? I’ll build it — but keep it clean, sharp, and specific.</h2>
+
+<form action="https://formsubmit.co/voltzdistro@gmail.com" method="POST" enctype="multipart/form-data">
+  <div class="form-wrapper">
+    <input type="text" name="name" placeholder="Your Name (optional)">
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <select name="tool_type" required>
+      <option value="script">PC utility</option>
+      <option value="bot">Mobile App</option>
+      <option value="web">Bot</option>
+      <option value="vcf">Web App</option>
+      <option value="other">Script</Script></option>
+        <option value="game">Other</option>
+    </select>
+
+    <input type="file" name="sample" class="full-width">
+
+    <textarea name="description" rows="4" placeholder="Project Idea / Platform Details" required></textarea>
+
+    <button type="submit">Send Request</button>
+    <input type="hidden" name="_next" value="https://voltzdistro.github.io/thank-you.html"> 
+  </div>
+</form>
+
+<p class="footer-note"><i data-lucide="triangle-alert"></i> This form sends directly to our inbox. Please don’t spam — we review every submission manually.</p>
+</form>
+  </main>
+  <script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

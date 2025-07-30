@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Voltzdistro</title>
+<!-- In the <head> of all .html files -->
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-icon" id="reload-icon"><i data-lucide="zap"></i></span>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="index.html" class="nav-item" data-tooltip="Home"><span class="nav-icon"><i data-lucide="home"></i></span></a></li>
+        <li><a href="about.html" class="nav-item active" data-tooltip="About"><span class="nav-icon"><i data-lucide="message-circle-warning"></i></span></a></li>
+        <li><a href="downloads.html" class="nav-item" data-tooltip="Downloads"><span class="nav-icon"><i data-lucide="download"></i></span></a></li>
+        <li><a href="repos.html" class="nav-item" data-tooltip="Repos"><span class="nav-icon"><i data-lucide="wrench"></i></span></a></li>
+        <li><a href="faqs.html" class="nav-item" data-tooltip="FAQs"><span class="nav-icon"><i data-lucide="help-circle"></i></span></a></li>
+        <li><a href="donate.html" class="nav-item" data-tooltip="Donate"><span class="nav-icon"><i data-lucide="hand-helping"></i></span></a></li>
+        <li><a href="report.html" class="nav-item" data-tooltip="Report"><span class="nav-icon"><i data-lucide="alert-triangle"></i></span></a></li>
+        <li><a href="community.html" class="nav-item" data-tooltip="Community"><span class="nav-icon"><i data-lucide="users"></i></span></a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-wrapper">
+        <section class="page-header">
+          <h1 class="page-title">About Voltzdistro</h1>
+          <p class="page-subtitle">The story, mission, and tech philosophy behind the underground engineering force.</p>
+        </section>
+
+        <section class="content-section">
+          <div class="content-area">
+            <h2>About Us</h2>
+            <p>Voltzdistro is a performance-first technology brand on a mission to reshape the way digital infrastructure is built, secured, and scaled.</p>
+            <p>Born from a need for sharper, lighter, and more intentional tools, Voltzdistro was founded with a simple belief: the best technology is not the most bloated — it's the most efficient. We specialize in creating high-impact software and systems that empower individuals, developers, and teams to do more with less.</p>
+            <p>From our earliest prototypes to our latest frameworks, the Voltzdistro journey has been defined by a relentless focus on clarity, security, and speed. Our origin wasn’t corporate — it was practical. We saw the growing complexity of digital tools, and we made it our goal to simplify, strengthen, and streamline the core systems people rely on every day.</p>
+            <p>We build low-resource, high-performance software that serves developers, sysadmins, pentesters, and anyone who values clean engineering. Whether it's automation scripts, security tools, OS-level utilities, or hardware-integrated solutions, everything we release reflects our commitment to performance without compromise.</p>
+
+            <h2>Our Mission</h2>
+            <p>To create tools and systems that are fast, secure, and radically efficient — so that people everywhere can build, automate, and protect what matters most.</p>
+            <p>We’re not interested in adding to the noise. We’re here to build what’s essential — tools that do exactly what they’re supposed to, and nothing more. Our mission is grounded in impact, not vanity.</p>
+
+            <h2>Our Tech Philosophy</h2>
+            <p>At Voltzdistro, we believe technology should be:</p>
+            <ul>
+              <li>Minimal in weight</li>
+              <li>Maximum in performance</li>
+              <li>Unbreakable in reliability</li>
+              <li>Timeless in utility</li>
+            </ul>
+            <p>We don’t chase trends. We engineer tools that stand the test of time — tools that are just as useful to a teenager learning code as they are to a sysadmin managing a critical network. If something is overcomplicated, we simplify it. If something is bloated, we strip it down. If something is slow, we rebuild it — faster, sharper, leaner.</p>
+            <p>Everything we build is designed with real-world pressure in mind: low RAM, weak networks, tight security, and zero tolerance for failure.</p>
+
+            <h2>Our Approach</h2>
+            <p>We don’t just build features — we engineer infrastructure. Every Voltzdistro tool, script, or system is developed with deep focus and ruthless attention to detail. Before something ships, it’s tested, refined, and stripped of anything unnecessary. If it doesn’t serve a clear purpose, it doesn’t make it in.</p>
+            <p>We’re obsessed with low-level performance, high-level impact, and delivering value to the people who actually use the tools — not just the ones reading the press releases.</p>
+            <p>Voltzdistro operates in the shadows — not because we’re hiding, but because we’re focused. We believe in solving real problems, not seeking hype. Our tools are for the doers, the builders, the defenders — the ones working behind the scenes to keep the digital world running.</p>
+
+            <h2>What Is Voltzdistro?</h2>
+            <p>Voltzdistro isn’t just a brand — it’s a mindset. A commitment to simplicity over noise, performance over clutter, and purpose over everything.</p>
+            <p>We’re building the backbone for a new era of tools: compact, secure, beautifully engineered, and ready to perform under pressure. Whether you’re automating a workflow, securing a network, or pushing the limits of your system, Voltzdistro is the invisible force behind your next move.</p>
+            <p><strong>Welcome to the future of low-resource, high-power tech.</strong></p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+<script>
+  document.getElementById("reload-icon").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  lucide.createIcons();
+</script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

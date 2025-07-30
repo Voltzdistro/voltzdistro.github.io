@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Voltzdistro</title>
+<!-- In the <head> of all .html files -->
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Fixed Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <span class="logo-icon" id="reload-icon"><i data-lucide="zap"></i></span>
+            </div>
+            <ul class="sidebar-nav">
+    <li><a href="index.html" class="nav-item" data-tooltip="Home"><span class="nav-icon"><i data-lucide="home"></i></span></a></li>
+    <li><a href="about.html" class="nav-item" data-tooltip="About"><span class="nav-icon"><i data-lucide="message-circle-warning"></i></span></a></li>
+    <li><a href="downloads.html" class="nav-item" data-tooltip="Downloads"><span class="nav-icon"><i data-lucide="download"></i></span></a></li>
+    <li><a href="repos.html" class="nav-item" data-tooltip="Repos"><span class="nav-icon"><i data-lucide="wrench"></i></span></a></li>
+    <li><a href="faqs.html" class="nav-item active" data-tooltip="FAQs"><span class="nav-icon"><i data-lucide="help-circle"></i></span></a></li>
+    <li><a href="donate.html" class="nav-item" data-tooltip="Donate"><span class="nav-icon"><i data-lucide="hand-helping"></i></span></a></li>
+    <li><a href="report.html" class="nav-item" data-tooltip="Report"><span class="nav-icon"><i data-lucide="alert-triangle"></i></span></a></li>
+    <li><a href="community.html" class="nav-item" data-tooltip="Community"><span class="nav-icon"><i data-lucide="users"></i></span></a></li>
+</ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <section class="page-header">
+                    <h1 class="page-title">Frequently Asked Questions</h1>
+                    <p class="page-subtitle">Questions about the brand, tools, security, and philosophy.</p>
+                </section>
+
+                <!-- Replace the placeholder section with this: -->
+
+<section class="content-section faqs">
+  <div class="faq-intro">
+    <h2 class="faq-header">Ask Less. Read More.</h2>
+    <p class="faq-subtext">Here are the questions people ask — or should ask — before using anything I build. If your question isn’t here, you’re probably overthinking it.</p>
+  </div>
+
+  <div class="faq-list">
+    <details>
+      <summary>Do I need to know code to use your tools?</summary>
+      <p>Not at all. Just head to the Downloads page. Everything there is simplified for regular users.</p>
+    </details>
+
+    <details>
+      <summary>Can I trust these files?</summary>
+      <p>I don’t upload junk. No ads. No spyware. No hidden installers. Still, use common sense — run a scan if you're paranoid.</p>
+    </details>
+
+    <details>
+      <summary>It didn’t work on my device. What now?</summary>
+      <p>Read any instructions I included. If it's still broken, send me the details through the Request page or GitHub Issues.</p>
+    </details>
+
+    <details>
+      <summary>Can I request a tool or app?</summary>
+      <p>Yes. Use the Request Page. Be clear. Be specific. Don’t waste time.</p>
+    </details>
+
+    <details>
+      <summary>Are these tools free?</summary>
+      <p>Everything I share here is free to use unless stated otherwise. Respect the work. Don’t resell it.</p>
+    </details>
+
+    <details>
+      <summary>Can I modify your code?</summary>
+      <p>If it's in the Repo, you’re free to clone, edit, or fork it. Just follow the license and don’t claim it as your own.</p>
+    </details>
+
+    <details>
+      <summary>Where’s the documentation?</summary>
+      <p>Inside the files. README or instructions usually included. If it’s not there, it’s either obvious — or not ready.</p>
+    </details>
+
+    <details>
+      <summary>Can I shout you out / credit you?</summary>
+      <p>Sure. Not required, but always appreciated.</p>
+    </details>
+
+    <details>
+      <summary>What systems do your tools support?</summary>
+      <p>Mostly Windows. Some scripts might work on Linux too. If it doesn’t say, assume Windows.</p>
+    </details>
+
+    <details>
+      <summary>Do you build mobile apps?</summary>
+      <p>Rarely. Most of my tools are PC-first. If a mobile version exists, it’ll be mentioned in the description.</p>
+    </details>
+
+    <details>
+      <summary>What kind of requests do you ignore?</summary>
+      <p>Anything vague, bloated, or legally sketchy. I don’t build hacks, cheats, or spyware. Don’t ask.</p>
+    </details>
+
+    <details>
+      <summary>Do you collect user data?</summary>
+      <p>No trackers. No analytics. I build tools, not traps. What you run is yours.</p>
+    </details>
+
+    <details>
+      <summary>Can I contribute to Voltzdistro?</summary>
+      <p>If you’ve got skills, sure. Hit me up through GitHub or email. No hand-holding, though — come prepared.</p>
+    </details>
+
+    <details>
+      <summary>Will this project disappear someday?</summary>
+      <p>No. This isn't a hype project. It’s a mission. Even if I go quiet, I’m still building.</p>
+    </details>
+  </div>
+</section>
+
+            </div>
+        </main>
+    </div>
+
+<script>
+  document.getElementById("reload-icon").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  lucide.createIcons();
+</script>
+    <script src="scripts/main.js"></script>
+</body>
+</html> 

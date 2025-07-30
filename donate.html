@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Lucide (for site-wide UI icons) -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Font Awesome (for payment and crypto icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate - Voltzdistro</title>
+  <!-- In the <head> of all .html files -->
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/responsive.css">
+    <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="app-container">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-icon" id="reload-icon"><i data-lucide="zap"></i></span>
+      </div>
+      <ul class="sidebar-nav">
+        <li><a href="index.html" class="nav-item" data-tooltip="Home"><span class="nav-icon"><i data-lucide="home"></i></span></a></li>
+        <li><a href="about.html" class="nav-item" data-tooltip="About"><span class="nav-icon"><i data-lucide="message-circle-warning"></i></span></a></li>
+        <li><a href="downloads.html" class="nav-item" data-tooltip="Downloads"><span class="nav-icon"><i data-lucide="download"></i></span></a></li>
+        <li><a href="repos.html" class="nav-item" data-tooltip="Repos"><span class="nav-icon"><i data-lucide="wrench"></i></span></a></li>
+        <li><a href="faqs.html" class="nav-item" data-tooltip="FAQs"><span class="nav-icon"><i data-lucide="help-circle"></i></span></a></li>
+        <li><a href="donate.html" class="nav-item active" data-tooltip="Donate"><span class="nav-icon"><i data-lucide="hand-helping"></i></span></a></li>
+        <li><a href="report.html" class="nav-item" data-tooltip="Report"><span class="nav-icon"><i data-lucide="alert-triangle"></i></span></a></li>
+        <li><a href="community.html" class="nav-item" data-tooltip="Community"><span class="nav-icon"><i data-lucide="users"></i></span></a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <div class="content-wrapper">
+        <section class="page-header">
+          <h1 class="page-title"> Support Voltzdistro</h1>
+          <p class="page-subtitle">Fuel the mission. Power the underground.</p>
+        </section>
+
+        <section class="content-section donate-section">
+          <p>At Voltzdistro, we build sharp, efficient, and powerful digital tools — for hackers, developers, sysadmins, and anyone tired of bloated tech. If our work has helped you, inspired you, or saved you time, consider showing your support.</p>
+
+              <h2><i class="fas fa-donate"></i> Standard Donations</h2>
+          <p>Use cards, Apple Pay, or other easy methods to support the mission:</p>
+          <a class="donate-btn" href="https://coff.ee/Voltzdistro" target="_blank"><i data-lucide="coffee"></i> Donate via Buy Me a Coffee</a>
+
+              <h2></i> Crypto Donations</h2>
+          <p>Support with crypto? Tap a link below to send directly via Trust Wallet:</p>
+          <ul class="crypto-links">
+            <li><strong><i class="fab fa-bitcoin"></i> Bitcoin (BTC):</strong> <a href="https://link.trustwallet.com/send?coin=0&address=bc1q7xphnuzxpqvs24j6w33ldpydrcgkv7jfrlyyj5" target="_blank">Send BTC</a></li>
+            <li><strong><i class="fab fa-ethereum"></i> Ethereum (ETH):</strong> <a href="https://link.trustwallet.com/send?coin=60&address=0xB3b66a92b87DE2c2816Cfe5E09DEF492CD9b19dB" target="_blank">Send ETH</a></li>
+            <li><strong><i data-lucide="gem"></i> USDT (ERC-20):</strong> <a href="https://link.trustwallet.com/send?coin=60&address=0xB3b66a92b87DE2c2816Cfe5E09DEF492CD9b19dB&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7" target="_blank">Send USDT</a></li>
+            <li><strong><i data-lucide="coins"></i> Solana (SOL):</strong> <a href="https://link.trustwallet.com/send?coin=501&address=D4QwvyMKkLBMYc76mQPbtuXQQQroYpghiGZhVn8qvZ4o" target="_blank">Send SOL</a></li>
+          </ul>
+
+          <p><i data-lucide="message-square-heart"></i> Want to donate anonymously or using a different coin? <a href="mailto:voltzdistro@gmail.com">Contact us</a> for a custom address (including Monero).</p>
+
+          <h2><i data-lucide="pickaxe"></i> Why Donate?</h2>
+          <ul>
+            <li>Because you believe in what we’re building</li>
+            <li>Because our tools are free, fast, and open — no paywalls, no BS</li>
+            <li>Because you’re tired of bloated, corporate software</li>
+          </ul>
+          <p>Your support goes straight into building tools, not ads or fluff.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script>
+  document.getElementById("reload-icon").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  lucide.createIcons();
+</script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - Voltzdistro</title>
+    <!-- In the <head> of all .html files -->
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Fixed Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <span class="logo-icon" id="reload-icon"><i data-lucide="zap"></i></span>
+            </div>
+            <ul class="sidebar-nav">
+    <li><a href="index.html" class="nav-item" data-tooltip="Home"><span class="nav-icon"><i data-lucide="home"></i></span></a></li>
+    <li><a href="about.html" class="nav-item" data-tooltip="About"><span class="nav-icon"><i data-lucide="message-circle-warning"></i></span></a></li>
+    <li><a href="downloads.html" class="nav-item" data-tooltip="Downloads"><span class="nav-icon"><i data-lucide="download"></i></span></a></li>
+    <li><a href="repos.html" class="nav-item" data-tooltip="Repos"><span class="nav-icon"><i data-lucide="wrench"></i></span></a></li>
+    <li><a href="faqs.html" class="nav-item" data-tooltip="FAQs"><span class="nav-icon"><i data-lucide="help-circle"></i></span></a></li>
+    <li><a href="donate.html" class="nav-item" data-tooltip="Donate"><span class="nav-icon"><i data-lucide="hand-helping"></i></span></a></li>
+    <li><a href="report.html" class="nav-item active" data-tooltip="Report"><span class="nav-icon"><i data-lucide="alert-triangle"></i></span></a></li>
+    <li><a href="community.html" class="nav-item" data-tooltip="Community"><span class="nav-icon"><i data-lucide="users"></i></span></a></li>
+</ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <section class="page-header">
+                    <h1 class="page-title">Report Issues</h1>
+                    <p class="page-subtitle">Bug reports, vulnerabilities, and copyright infringement reporting.</p>
+                </section>
+
+                <div class="report-container">
+  <h1>Submit a Report Form</h1>
+  <p><!-- Description --></p>
+
+  <form class="report-form" action="mailto:voltzdistro@gmail.com" method="POST" enctype="multipart/form-data">
+    <label for="type">Report Type</label>
+    <select id="type" name="type" required>
+      <option value="">Select one...</option>
+      <option value="bug">Bug Report</option>
+      <option value="vulnerability">Vulnerability</option>
+      <option value="copyright">Copyright Infringement</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" placeholder="Describe the issue clearly..." required></textarea>
+
+    <label for="email">Your Email (optional)</label>
+    <input type="email" id="email" name="email" placeholder="name@example.com">
+
+    <label for="file">Attach File (optional)</label>
+    <input type="file" id="file" name="file">
+
+    <button type="submit">Submit Report</button>
+    <input type="hidden" name="_next" value="https://voltzdistro.github.io/thank-you.html">
+  </form>
+</div>
+  </form>
+</section>
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+<script>
+  document.getElementById("reload-icon").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  lucide.createIcons();
+</script>
+    <script src="scripts/main.js"></script>
+</body>
+</html> 

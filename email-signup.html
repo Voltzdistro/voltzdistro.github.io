@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join the Email List – Voltzdistro</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="dark-theme">
+
+  <main class="form-container">
+    <h1>Join the Email List</h1>
+    <p class="subtext">Want updates without the noise?<br>Subscribe to the Voltzdistro email list and get sharp, no-BS updates when we drop tools, fix stuff, or make moves. No spam. No daily newsletters. Just raw info when it matters.</p>
+
+    <ul class="email-benefits icon-list">
+      <li><i data-lucide="download"></i> Tool releases</li>
+      <li><i data-lucide="wrench"></i> Bug fixes & patches</li>
+      <li><i data-lucide="shield-check"></i> Security alerts</li>
+      <li><i data-lucide="megaphone"></i> Dev calls / testing programs</li>
+      <li><i data-lucide="flame"></i> Private drops & insider builds</li>
+    </ul>
+
+    <p class="privacy-note"><i class="fas fa-lock"></i> We don’t track. We don’t sell. We don’t spam.<br>Your inbox stays yours. Unsub anytime, no drama.</p>
+
+    <form action="https://formsubmit.co/voltzdistro@gmail.com"method="POST">
+      <input type="hidden" name="_next" value="thank-you.html" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="email" name="email" required placeholder="Your email address" class="email-input"/>
+      <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+      <input type="hidden" name="_next" value="https://voltzdistro.github.io/thank-you.html">
+    </form>
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>

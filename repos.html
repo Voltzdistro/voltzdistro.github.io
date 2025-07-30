@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositories - Voltzdistro</title>
+    <!-- In the <head> of all .html files -->
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Fixed Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <span class="logo-icon" id="reload-icon"><i data-lucide="zap"></i></span>
+            </div>
+            <ul class="sidebar-nav">
+    <li><a href="index.html" class="nav-item" data-tooltip="Home"><span class="nav-icon"><i data-lucide="home"></i></span></a></li>
+    <li><a href="about.html" class="nav-item" data-tooltip="About"><span class="nav-icon"><i data-lucide="message-circle-warning"></i></span></a></li>
+    <li><a href="downloads.html" class="nav-item" data-tooltip="Downloads"><span class="nav-icon"><i data-lucide="download"></i></span></a></li>
+    <li><a href="repos.html" class="nav-item active" data-tooltip="Repos"><span class="nav-icon"><i data-lucide="wrench"></i></span></a></li>
+    <li><a href="faqs.html" class="nav-item" data-tooltip="FAQs"><span class="nav-icon"><i data-lucide="help-circle"></i></span></a></li>
+    <li><a href="donate.html" class="nav-item" data-tooltip="Donate"><span class="nav-icon"><i data-lucide="hand-helping"></i></span></a></li>
+    <li><a href="report.html" class="nav-item" data-tooltip="Report"><span class="nav-icon"><i data-lucide="alert-triangle"></i></span></a></li>
+    <li><a href="community.html" class="nav-item" data-tooltip="Community"><span class="nav-icon"><i data-lucide="users"></i></span></a></li>
+</ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <section class="page-header">
+                    <h1 class="page-title">Repositories</h1>
+                    <p class="page-subtitle">GitHub links and technical documentation for developers.</p>
+                </section>
+
+                <section class="content-section">
+    <div class="repo-grid">
+
+        <div class="repo-card">
+            <h3 class="repo-name">Tool Repo Placeholder</h3>
+            <p class="repo-desc">Description for a Voltzdistro tool will appear here. Useful for explaining what the tool does, which platform it's for, and any dependencies.</p>
+            <a href="https://github.com/Voltzdistro/Anita-V4" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="repo-card">
+            <h3 class="repo-name">Automation Script Placeholder</h3>
+            <p class="repo-desc">Future automation or scripting projects will be listed here. These may include WhatsApp bots, CLI tools, or system utilities.</p>
+            <a href="#" class="repo-link" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="repo-card">
+            <h3 class="repo-name">Experimental Project Placeholder</h3>
+            <p class="repo-desc">Experimental ideas, beta projects, or sandbox utilities for testing purposes. Updated when new work is pushed.</p>
+            <a href="#" class="repo-link" target="_blank">View on GitHub</a>
+        </div>
+        <div class="repo-card">
+            <h3 class="repo-name">Tool Drop Incoming</h3>
+            <p class="repo-desc">Write-up goes here. What it does, who it’s for, and what you need to run it. No sugarcoating — just the facts.</p>
+            <a href="#" class="repo-link" target="_blank">View on GitHub</a>
+        </div>
+        <div class="repo-card">
+            <h3 class="repo-name">Automation Script Drop</h3>
+            <p class="repo-desc">Write-up goes here. What it does, who it’s for, and what you need to run it. No sugarcoating — just the facts.</p>
+            <a href="#" class="repo-link" target="_blank">View on GitHub</a>
+        </div>
+        <div class="repo-card">
+            <h3 class="repo-name">Experimental Project Drop</h3>
+            <p class="repo-desc">Write-up goes here. What it does, who it’s for, and what you need to run it. No sugarcoating — just the facts.</p>
+            <a href="#" class="repo-link" target="_blank">View on GitHub</a>
+</section>
+
+                </section>
+            </div>
+        </main>
+    </div>
+
+<script>
+  document.getElementById("reload-icon").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  lucide.createIcons();
+</script>
+    <script src="scripts/main.js"></script>
+</body>
+</html> 

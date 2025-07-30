@@ -1,0 +1,21 @@
+{
+  "name": "Voltzdistro",
+  "short_name": "Voltzdistro",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#001D39",
+  "theme_color": "#0A4174",
+  "description": "Voltzdistro: Secure, sharp, bloat-free tools for power users.",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}

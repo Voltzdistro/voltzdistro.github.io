@@ -1435,3 +1435,83 @@ form button:hover {
   box-shadow: 0 0 12px #4E8EA2aa;
   color: #BDD8E9;
 }
+/* ========== Report Form Styles ========== */
+
+.report-container {
+  background-color: #0a1e33;
+  border: 1px solid #4e8ea2;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  max-width: 700px;
+  width: 100%;
+  color: #bdd8e9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.report-container h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #7bbde8;
+}
+
+.report-container p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #bdd8e9;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.report-form label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #bdd8e9;
+}
+
+.report-form input,
+.report-form textarea,
+.report-form select {
+  background-color: #001d39;
+  color: #fff;
+  border: 1px solid #49769f;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.report-form input:focus,
+.report-form textarea:focus,
+.report-form select:focus {
+  border-color: #7bbde8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(123, 189, 232, 0.2);
+}
+
+.report-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.report-form button {
+  background-color: #49769f;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.report-form button:hover {
+  background-color: #4e8ea2;
+}

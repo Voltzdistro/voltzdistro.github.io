@@ -145,3 +145,98 @@
 .learn-btn:hover {
   background: #ff6a4a;
 }
+/* Floating pastel glassmorphic card */
+.floating-ad {
+  position: fixed;
+  bottom: 20px; /* Change to top: 20px; for top-right */
+  right: 20px;
+  z-index: 9999;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 0.6s ease-out forwards;
+}
+
+/* Animation keyframes */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ad-content {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 16px;
+  width: 280px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-family: Arial, sans-serif;
+
+  /* Pastel gradient */
+  background-image: linear-gradient(
+    135deg,
+    rgba(173, 216, 230, 0.25),
+    rgba(221, 160, 221, 0.25),
+    rgba(255, 182, 193, 0.25)
+  );
+}
+
+/* Title */
+.ad-content h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+/* Paragraph */
+.ad-content p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* Buttons container */
+.ad-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Cancel button */
+.cancel-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Learn More button */
+.learn-btn {
+  flex: 1;
+  padding: 8px;
+  background: rgba(255, 182, 193, 0.6); /* Pastel pink */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.learn-btn:hover {
+  background: rgba(255, 182, 193, 0.8);
+}

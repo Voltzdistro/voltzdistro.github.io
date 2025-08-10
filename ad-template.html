@@ -1,0 +1,55 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Universal Ad — Launch Promo</title>
+  <link rel="stylesheet" href="ad-styles.css">
+</head>
+<body>
+
+  <!-- Universal Ad (scoped) -->
+  <div class="universal-ad" id="universalAd" role="dialog" aria-labelledby="adTitle" aria-describedby="adBody">
+    <div class="ad-inner">
+      <h3 id="adTitle" class="ad-title">Something Big Is About to Happen — And You’re Either In or You’re Out</h3>
+
+      <div id="adBody" class="ad-body">
+        <p class="ad-copy">
+          In <span id="countDays">6</span> days, a major entrepreneur &amp; YouTuber is pulling back the curtain on something that could shift how you think, work, and win — forever. It’s bold, it’s rare, and it’s not for everyone.
+        </p>
+
+        <ul class="ad-qualifiers" aria-hidden="true">
+          <li>If you need every detail laid out before you act… this isn’t for you.</li>
+          <li>If you only jump when you can see the finish line… this isn’t for you.</li>
+        </ul>
+
+        <p class="ad-hook">
+          But if you’re the type who moves before the crowd catches on — here’s your shot:
+        </p>
+
+        <p class="ad-link">
+          👉 <a id="promoLink" href="https://shop.acquisition.com/pages/register?via=francis25" target="_blank" rel="noopener noreferrer">https://shop.acquisition.com/pages/register?via=francis25</a>
+        </p>
+
+        <p class="ad-clock">
+          Doors open <strong>August 16, 2025</strong> at <strong>9 AM PT / 12 PM ET</strong>.
+        </p>
+
+        <div class="countdown" aria-live="polite" aria-atomic="true">
+          <span class="count-item"><span id="cdDays">0</span>d</span>
+          <span class="count-item"><span id="cdHours">00</span>h</span>
+          <span class="count-item"><span id="cdMins">00</span>m</span>
+          <span class="count-item"><span id="cdSecs">00</span>s</span>
+        </div>
+      </div>
+
+      <div class="ad-actions">
+        <button class="ad-btn cancel-btn" id="cancelAd" aria-label="Dismiss ad">Cancel</button>
+        <button class="ad-btn learn-btn" id="learnAd" aria-label="Learn more about promo">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="ad-script.js" defer></script>
+</body>
+</html>

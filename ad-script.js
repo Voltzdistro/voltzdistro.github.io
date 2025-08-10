@@ -98,3 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ad.style.display = 'none';
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const cancelBtn = document.getElementById('cancelAd');
+  const ad = document.getElementById('floatingAd');
+
+  cancelBtn.addEventListener('click', () => {
+    ad.style.display = 'none';
+  });
+});

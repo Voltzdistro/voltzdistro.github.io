@@ -68,3 +68,80 @@
   .ad-body { font-size:13px; }
   .count-item { min-width:36px; padding:6px; font-size:12px; }
 }
+/* Glassmorphic overlay */
+.universal-ad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Glassmorphic card */
+.ad-content {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.ad-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.ad-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Buttons container */
+.ad-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Cancel button */
+.cancel-btn {
+  padding: 10px 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Learn More button */
+.learn-btn {
+  padding: 10px 15px;
+  background: #ff4b2b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.learn-btn:hover {
+  background: #ff6a4a;
+}

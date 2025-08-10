@@ -90,3 +90,11 @@ document.addEventListener('keydown', (e) => {
     cancelBtn.click();
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const cancelBtn = document.getElementById('cancelAd');
+  const ad = document.getElementById('universalAd');
+
+  cancelBtn.addEventListener('click', () => {
+    ad.style.display = 'none';
+  });
+});

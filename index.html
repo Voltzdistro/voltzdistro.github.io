@@ -129,7 +129,19 @@
             </div>
         </main>
     </div>
+<!-- Load the ad HTML dynamically -->
+<script>
+fetch('ad-template.html')
+  .then(response => response.text())
+  .then(html => {
+    document.body.insertAdjacentHTML('beforeend', html);
 
+    // Load ad JS after HTML is injected
+    const script = document.createElement('script');
+    script.src = 'js/ad-script.js'; // if you keep it in /js/
+    document.body.appendChild(script);
+  });
+</script>
     <script src="scripts/main.js"></script>
     <script>
   const currentPage = window.location.pathname.split("/").pop();
@@ -159,5 +171,6 @@
 
 </body>
 </html>
+
 
 

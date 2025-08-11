@@ -1,0 +1,145 @@
+/* --- New downloads list styling: vertical list centered --- */
+
+.downloads-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center cards horizontally */
+  gap: 2rem; /* space between cards */
+  padding: 2rem 1rem;
+  max-width: 800px; /* max width for the list so cards don't stretch too far */
+  margin: 0 auto; /* center container horizontally */
+}
+
+.tool-card {
+  background: #1e1e2f; /* dark background, adjust to your theme */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  width: 100%; /* full width of container */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.8rem 2rem;
+  color: #eee;
+  cursor: default;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+}
+
+/* Left side: tool details */
+.tool-header > div {
+  flex: 1 1 auto;
+}
+
+.tool-header h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  color: #fff;
+  user-select: none;
+}
+
+.tool-header .tagline,
+.tool-header .filesize {
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 0.15rem;
+  user-select: none;
+}
+
+/* Download button: right side inside card */
+.download-btn {
+  align-self: center;
+  background-color: #4caf50; /* bright green button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
+/* Description below the card, full width with padding */
+.tool-description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.4;
+  max-width: 760px;
+  user-select: text;
+  display: none; /* hidden by default, toggled by JS */
+}
+
+/* Show description when card expanded */
+.tool-card.expanded .tool-description {
+  display: block;
+}
+
+/* List styling inside description */
+.tool-description ul {
+  margin: 0.8rem 0 0 1.2rem;
+  padding: 0;
+  list-style-type: disc;
+  color: #ccc;
+}
+
+/* Download inline button in description (optional) */
+.download-btn-inline {
+  margin-top: 1rem;
+  background-color: #2196f3;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn-inline:hover {
+  background-color: #1976d2;
+}
+
+/* Disabled download button style for placeholders */
+.download-btn.disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  color: #999;
+}
+.tool-description {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 1rem;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.4;
+  user-select: text;
+}
+
+/* When expanded, reveal the description */
+.tool-card.expanded .tool-description {
+  max-height: 1000px; /* big enough to fit content */
+  opacity: 1;
+  padding: 1rem;
+}

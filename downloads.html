@@ -111,18 +111,28 @@
     </button>
   </div>
         <!-- Add more tools as needed -->
-        <div class="tool-description">
-  <p><strong>VoltzdistroSystemOptimizer [Pro] Full Edition</strong> is the ultimate Windows system tuning beast — cleaning junk, killing bloat, disabling telemetry, and squeezing every ounce of speed and stability from your PC with one powerful tool.</p>
-  <ul>
-    <li><i data-lucide="trash-2"></i> Deep cleanup: temp files, cache, and hidden clutter</li>
-    <li><i data-lucide="cpu"></i> Memory optimization & background app kill</li>
-    <li><i data-lucide="settings"></i> Disable telemetry & unnecessary services</li>
-    <li><i data-lucide="zap"></i> Full system tune-up with advanced batch operations</li>
-  </ul>
-  <button class="download-btn-inline" onclick="window.open('https://u.pcloud.link/publink/show?code=XZWgCW5ZxSxmLMjaNmJyjrIw7rEKQ8QNypAk', '_blank')">
-    <i data-lucide="download-cloud"></i> Download VoltzdistroSystemOptimizer [Pro]
-  </button>
+  <div class="tool-card">
+  <div class="tool-header" onclick="toggleDescription(this.parentElement)">
+    <div>
+      <h3><i data-lucide="cpu"></i> VoltzdistroSystemOptimizer [Pro] <span class="version">Full Edition</span></h3>
+      <p class="tagline"><i data-lucide="zap"></i> Ultimate Windows Speed & Stability Boost</p>
+      <p class="filesize"><i data-lucide="database"></i> <!-- Put actual filesize here, e.g. --> 2.5MB</p>
+    </div>
+    <button class="download-btn" onclick="event.stopPropagation(); window.open('https://your-download-link-here', '_blank')">
+      <i data-lucide="download"></i> Download
+    </button>
+  </div>
+  <div class="tool-description" style="display:none;">
+    <p><strong>VoltzdistroSystemOptimizer [Pro] Full Edition</strong> is the ultimate Windows system tuning beast — cleaning junk, killing bloat, disabling telemetry, and squeezing every ounce of speed and stability from your PC with one powerful tool.</p>
+    <ul>
+      <li><i data-lucide="trash-2"></i> Deep cleanup: temp files, cache, and hidden clutter</li>
+      <li><i data-lucide="cpu"></i> Memory optimization & background app kill</li>
+      <li><i data-lucide="settings"></i> Disable telemetry & unnecessary services</li>
+      <li><i data-lucide="zap"></i> Full system tune-up with advanced batch operations</li>
+    </ul>
+  </div>
 </div>
+
 
       </div>
     </section>
@@ -170,4 +180,5 @@
   </script>
 </body>
 </html>
+
 

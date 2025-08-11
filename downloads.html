@@ -6,6 +6,7 @@
   <title>Downloads – Voltzdistro</title>
   <!-- In the <head> of all .html files -->
 <link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/downloads.css">
 <link rel="stylesheet" href="styles/sidebar.css">
 <link rel="stylesheet" href="styles/responsive.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,9 +42,77 @@
       <p class="section-desc">Here are our free tools — sharp, bloat-free, and ready to go. No ads. No nags.</p>
 
       <div class="downloads-list">
+        <div class="tool-card">
+  <div class="tool-header" onclick="toggleDescription(this)">
+    <div>
+      <h3><i data-lucide="cpu"></i> Voltzdistro System Optimizer (Pro)</h3>
+      <p class="tagline"><i data-lucide="zap"></i> Unleash the full power of your Windows machine.</p>
+      <p class="filesize"><i data-lucide="database"></i> 100.5KB</p>
+    </div>
+    <button class="download-btn" onclick="event.stopPropagation(); window.open('https://u.pcloud.link/publink/show?code=XZWgCW5ZxSxmLMjaNmJyjrIw7rEKQ8QNypAk', '_blank')">
+      <i data-lucide="download"></i> Download
+    </button>
+  </div>
+
+  <div class="tool-description">
+    <p>The Pro version of Voltzdistro’s legendary optimization tool isn’t here to play nice — it’s here to strip away bloat, crush unnecessary processes, and push your system to peak performance. Built for power users, pentesters, and anyone who demands maximum speed and stability, Voltzdistro System Optimizer Pro goes beyond the Lite edition with deep system tweaks, advanced automation, and aggressive optimization routines.</p>
+
+    <h4>Key Capabilities</h4>
+    
+    <strong>Core Operations:</strong>
+    <ul>
+      <li>Clean temporary files and clear system clutter</li>
+      <li>Flush DNS cache for faster network resolution</li>
+      <li>Optimize memory allocation in real time</li>
+      <li>Kill resource-draining background apps instantly</li>
+      <li>Restart critical Windows services without a reboot</li>
+      <li>Run a full System File Checker scan</li>
+      <li>Backup user data safely</li>
+      <li>Test network connectivity on-demand</li>
+    </ul>
+
+    <strong>Advanced Operations:</strong>
+    <ul>
+      <li>Disable intrusive Windows telemetry</li>
+      <li>Turn off unnecessary services for lean performance</li>
+      <li>Kill hidden background tasks that waste CPU cycles</li>
+      <li>Perform deep, advanced system cleanup</li>
+      <li>Apply precision performance optimization tweaks</li>
+    </ul>
+
+    <strong>Batch Operations:</strong>
+    <ul>
+      <li>Execute all basic operations in one command</li>
+      <li>Run every advanced optimization in sequence</li>
+      <li>Perform a Full System Optimization — the ultimate one-click performance overhaul</li>
+    </ul>
+
+    <p><strong>Why Pro?</strong> Where the Lite edition handles the essentials, the Full Edition rewires your system’s core behavior. It’s not just cleanup — it’s control. Every tweak, every process kill, every registry adjustment is engineered for speed, privacy, and resource efficiency.</p>
+  </div>
+</div>
+<div class="tool-card">
+  <div class="tool-header" onclick="toggleDescription(this)">
+    <div>
+      <h3><i data-lucide="file-text"></i> Windows Activators</h3>
+      <p class="tagline"><i data-lucide="file-text"></i> Essential activation keys in text format.</p>
+      <p class="filesize"><i data-lucide="database"></i> 908 bytes</p>
+    </div>
+    <button class="download-btn" onclick="event.stopPropagation(); window.open('https://u.pcloud.link/publink/show?code=XZRClW5Zf3veqnTsLQBAEjhbCdqN5hR9AGYk', '_blank')">
+      <i data-lucide="download"></i> Download
+    </button>
+  </div>
+
+  <div class="tool-description">
+    <p><strong>Windows Activators</strong> is a critical text file containing validated activation keys and commands designed to facilitate Windows activation processes in authorized environments.</p>
+    <p>This resource is intended for IT professionals and system administrators who require streamlined activation methods for deployment or maintenance purposes.</p>
+    <p><em>Disclaimer:</em> Use strictly within legal and ethical boundaries. Unauthorized use may violate software licensing agreements.</p>
+  </div>
+</div>
+
+
         <!-- Sample project -->
         <div class="tool-card">
-  <div class="tool-header" onclick="toggleDescription(header)">
+  <div class="tool-header" onclick="toggleDescription(this)">
     <div>
       <h3><i data-lucide="zap"></i> NetBooster™ <span class="version">v1.0</span></h3>
       <p class="tagline"><i data-lucide="activity"></i> Optimize. Accelerate. Reclaim Your Network.</p>
@@ -70,7 +139,7 @@
 
         <!-- Add more tools here -->
          <div class="tool-card">
-  <div class="tool-header" onclick="toggleDescription(tool-card)">
+  <div class="tool-header" onclick="toggleDescription(this)">
     <div>
       <h3><i data-lucide="cpu"></i> Voltzdistro™ System Optimizer (Light) <span class="version">v1.0</span></h3>
       <p class="tagline"><i data-lucide="zap"></i> Minimal Load. Maximum Efficiency.</p>
@@ -111,29 +180,7 @@
     </button>
   </div>
         <!-- Add more tools as needed -->
-  <div class="tool-card">
-  <div class="tool-header" onclick="toggleDescription(this.parentElement)">
-    <div>
-      <h3><i data-lucide="cpu"></i> VoltzdistroSystemOptimizer [Pro] <span class="version">Full Edition</span></h3>
-      <p class="tagline"><i data-lucide="zap"></i> Ultimate Windows Speed & Stability Boost</p>
-      <p class="filesize"><i data-lucide="database"></i> <!-- Put actual filesize here, e.g. --> 100KB</p>
-    </div>
-    <button class="download-btn" onclick="event.stopPropagation(); window.open('https://your-download-link-here', '_blank')">
-      <i data-lucide="download"></i> Download
-    </button>
-  </div>
-  <div class="tool-description" style="display:none;">
-    <p><strong>VoltzdistroSystemOptimizer [Pro] Full Edition</strong> is the ultimate Windows system tuning beast — cleaning junk, killing bloat, disabling telemetry, and squeezing every ounce of speed and stability from your PC with one powerful tool.</p>
-    <ul>
-      <li><i data-lucide="trash-2"></i> Deep cleanup: temp files, cache, and hidden clutter</li>
-      <li><i data-lucide="cpu"></i> Memory optimization & background app kill</li>
-      <li><i data-lucide="settings"></i> Disable telemetry & unnecessary services</li>
-      <li><i data-lucide="zap"></i> Full system tune-up with advanced batch operations</li>
-    </ul>
-  </div>
-</div>
-
-
+         
       </div>
     </section>
 
@@ -180,6 +227,3 @@
   </script>
 </body>
 </html>
-
-
-

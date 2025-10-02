@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight - Voltzdistro</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/spotlight.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-container">
+        <!-- Fixed Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <span class="logo-icon" id="reload-icon"><i data-lucide="zap"></i></span>
+            </div>
+            <ul class="sidebar-nav">
+    <li><a href="index.html" class="nav-item active" data-tooltip="Home"><span class="nav-icon"><i data-lucide="home"></i></span></a></li>
+    <li><a href="about.html" class="nav-item" data-tooltip="About"><span class="nav-icon"><i data-lucide="message-circle-warning"></i></span></a></li>
+    <li><a href="downloads.html" class="nav-item" data-tooltip="Downloads"><span class="nav-icon"><i data-lucide="download"></i></span></a></li>
+    <li><a href="repos.html" class="nav-item" data-tooltip="Repos"><span class="nav-icon"><i data-lucide="wrench"></i></span></a></li>
+    <li><a href="spotlight.html" class="nav-item" data-tooltip="Spotlight"><span class="nav-icon"><i data-lucide="newspaper"></i></span></a></li>
+    <li><a href="faqs.html" class="nav-item" data-tooltip="FAQs"><span class="nav-icon"><i data-lucide="help-circle"></i></span></a></li>
+    <li><a href="donate.html" class="nav-item" data-tooltip="Donate"><span class="nav-icon"><i data-lucide="hand-helping"></i></span></a></li>
+    <li><a href="report.html" class="nav-item" data-tooltip="Report"><span class="nav-icon"><i data-lucide="alert-triangle"></i></span></a></li>
+    <li><a href="community.html" class="nav-item" data-tooltip="Community"><span class="nav-icon"><i data-lucide="users"></i></span></a></li>
+
+ </ul>
+
+        </nav>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- Header Section -->
+                <section class="spotlight-header">
+                    <h1 class="spotlight-title">Spotlight</h1>
+                    <p class="spotlight-subtitle">Your exclusive hub for deals, news, projects, and special ads.</p>
+                </section>
+
+                <!-- Tabs Navigation -->
+                <section class="tabs-section">
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="deals">Deals & Offers</button>
+                        <button class="tab-btn" data-tab="news">News & Announcements</button>
+                        <button class="tab-btn" data-tab="projects">Projects & Spotlights</button>
+                        <button class="tab-btn" data-tab="ads">Advertisements</button>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="filters-section">
+                        <div class="filter-group">
+                            <label for="timeframe-filter">Timeframe:</label>
+                            <select id="timeframe-filter" class="filter-select">
+                                <option value="latest">Latest</option>
+                                <option value="week">This Week</option>
+                                <option value="month">This Month</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="media-filter">Media Type:</label>
+                            <select id="media-filter" class="filter-select">
+                                <option value="all">All</option>
+                                <option value="articles">Articles</option>
+                                <option value="videos">Videos</option>
+                                <option value="images">Images</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tab Content -->
+                <section class="tab-content-section">
+                    <!-- Deals & Offers Tab -->
+                    <div class="tab-content active" id="deals-content">
+                        <div class="cards-grid">
+                            <div class="spotlight-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Security Tools Bundle">
+                                    <div class="card-badge deal">50% OFF</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Security Tools Bundle</h3>
+                                    <p class="card-description">Complete penetration testing toolkit with advanced encryption modules. Limited time offer for underground devs.</p>
+                                    <div class="card-meta">
+                                        <span class="card-price">$29.99 <span class="original-price">$59.99</span></span>
+                                        <span class="card-date">Valid until Dec 31</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=400" alt="VCF Generator Pro">
+                                    <div class="card-badge deal">FREE</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">VCF Generator Pro</h3>
+                                    <p class="card-description">Advanced contact file generator with batch processing capabilities. Now available for free to community members.</p>
+                                    <div class="card-meta">
+                                        <span class="card-price">Free</span>
+                                        <span class="card-date">Community Exclusive</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400" alt="System Optimizer">
+                                    <div class="card-badge deal">30% OFF</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">System Optimizer Suite</h3>
+                                    <p class="card-description">Low-resource system optimization tools designed for legacy hardware and minimal environments.</p>
+                                    <div class="card-meta">
+                                        <span class="card-price">$19.99 <span class="original-price">$29.99</span></span>
+                                        <span class="card-date">Flash Sale</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News & Announcements Tab -->
+                    <div class="tab-content" id="news-content">
+                        <div class="cards-grid">
+                            <div class="spotlight-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Security Update">
+                                    <div class="card-badge news">SECURITY</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Critical Security Patch Released</h3>
+                                    <p class="card-description">Important security update for all Voltzdistro tools addressing potential vulnerabilities in legacy systems.</p>
+                                    <div class="card-meta">
+                                        <span class="card-author">Security Team</span>
+                                        <span class="card-date">2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=400" alt="New Release">
+                                    <div class="card-badge news">RELEASE</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Voltzdistro v3.2 Now Available</h3>
+                                    <p class="card-description">Major update includes new automation scripts, improved performance, and enhanced security features for underground operations.</p>
+                                    <div class="card-meta">
+                                        <span class="card-author">Dev Team</span>
+                                        <span class="card-date">1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Community Growth">
+                                    <div class="card-badge news">MILESTONE</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">10K+ Underground Developers Joined</h3>
+                                    <p class="card-description">Voltzdistro community reaches new milestone with developers from 50+ countries contributing to the underground tech movement.</p>
+                                    <div class="card-meta">
+                                        <span class="card-author">Community Team</span>
+                                        <span class="card-date">3 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projects & Spotlights Tab -->
+                    <div class="tab-content" id="projects-content">
+                        <div class="cards-grid">
+                            <div class="spotlight-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Ghost Protocol">
+                                    <div class="card-badge project">FEATURED</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Project Ghost Protocol</h3>
+                                    <p class="card-description">Advanced stealth networking toolkit for secure communications in restricted environments. Built for maximum anonymity.</p>
+                                    <div class="card-meta">
+                                        <span class="card-status">In Development</span>
+                                        <span class="card-date">ETA: Q1 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cipher Engine">
+                                    <div class="card-badge project">SPOTLIGHT</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Cipher Engine 2.0</h3>
+                                    <p class="card-description">Next-generation encryption engine with quantum-resistant algorithms and zero-knowledge architecture.</p>
+                                    <div class="card-meta">
+                                        <span class="card-status">Beta Testing</span>
+                                        <span class="card-date">Contributors: 23</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-card">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Neural Forge">
+                                    <div class="card-badge project">COMMUNITY</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Neural Forge Framework</h3>
+                                    <p class="card-description">Lightweight AI framework optimized for edge computing and resource-constrained environments.</p>
+                                    <div class="card-meta">
+                                        <span class="card-status">Open Source</span>
+                                        <span class="card-date">Stars: 2.1k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advertisements Tab -->
+                    <div class="tab-content" id="ads-content">
+                        <div class="cards-grid ads-grid">
+                            <div class="spotlight-card ad-banner">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=600" alt="CyberShield VPN">
+                                    <div class="card-badge ad">SPONSORED</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">CyberShield VPN - Ultimate Privacy</h3>
+                                    <p class="card-description">Military-grade encryption for underground operations. No logs, no traces, maximum security.</p>
+                                    <div class="card-meta">
+                                        <span class="card-cta">Get 70% Off</span>
+                                        <span class="card-sponsor">Partner</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-card ad-square">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=400" alt="SecureOS">
+                                    <div class="card-badge ad">AD</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">SecureOS</h3>
+                                    <p class="card-description">Hardened operating system for security professionals.</p>
+                                    <div class="card-meta">
+                                        <span class="card-cta">Try Free</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-card ad-square">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181564/pexels-photo-1181564.jpeg?auto=compress&cs=tinysrgb&w=400" alt="HackerSpace">
+                                    <div class="card-badge ad">PROMO</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">HackerSpace</h3>
+                                    <p class="card-description">Premium workspace for ethical hackers and security researchers.</p>
+                                    <div class="card-meta">
+                                        <span class="card-cta">Join Now</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-card ad-banner">
+                                <div class="card-image">
+                                    <img src="https://images.pexels.com/photos/1181580/pexels-photo-1181580.jpeg?auto=compress&cs=tinysrgb&w=600" alt="CodeVault">
+                                    <div class="card-badge ad">FEATURED</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">CodeVault - Secure Code Repository</h3>
+                                    <p class="card-description">Private, encrypted code storage with advanced collaboration tools for underground development teams.</p>
+                                    <div class="card-meta">
+                                        <span class="card-cta">Start Free Trial</span>
+                                        <span class="card-sponsor">Trusted Partner</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script>
+  document.getElementById("reload-icon").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  lucide.createIcons();
+</script>
+</body>
+</html>

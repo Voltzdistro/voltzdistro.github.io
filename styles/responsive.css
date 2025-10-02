@@ -27,11 +27,11 @@
 /* Mobile styles */
 @media (max-width: 768px) {
   .sidebar {
-    width: 50px;
+    width: 60px;
   }
   
   .main-content {
-    margin-left: 50px;
+    margin-left: 60px;
   }
   
   .content-wrapper {
@@ -221,3 +221,4 @@
   }
 
 }
+

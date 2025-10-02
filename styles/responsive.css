@@ -27,11 +27,11 @@
 /* Mobile styles */
 @media (max-width: 768px) {
   .sidebar {
-    width: 64px;
+    width: 50px;
   }
   
   .main-content {
-    margin-left: 64px;
+    margin-left: 50px;
   }
   
   .content-wrapper {
@@ -219,4 +219,5 @@
   .highlight-card::before {
     display: none;
   }
+
 }

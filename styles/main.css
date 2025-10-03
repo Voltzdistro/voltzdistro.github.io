@@ -112,7 +112,7 @@ p {
   font-size: 3rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 10px;
 }
 
 .page-subtitle {
@@ -1515,3 +1515,4 @@ form button:hover {
 .report-form button:hover {
   background-color: #4e8ea2;
 }
+

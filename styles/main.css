@@ -171,6 +171,7 @@ p {
   transition: all var(--transition-fast);
   cursor: pointer;
   font-family: var(--font-primary);
+  margin-bottom: var(--spacing-md);
 }
 
 .btn-primary {
@@ -1515,4 +1516,5 @@ form button:hover {
 .report-form button:hover {
   background-color: #4e8ea2;
 }
+
 
